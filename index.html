@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <iframe width="0" height="0" src="" frameborder="0" allowfullscreen></iframe>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1. Create Title of Game in a Header. 
+    2. Create list of word choices for the game.
+        a. Each should be a theme of its own.
+    3. Create # variables for:
+        1. Loses
+        2. Wins
+        3. Ateempts
+        4. List of characters used up
+    4. Use JavaScript to filter the letters attempt and cross them
+    5. Add banner for Loses and Wins
+    7. Try to display an image for each word category and it's items
+    8. Try to add sound effects to them if possible.
+    9. Try to add an Hangman image -->
+
+    <header>
+        <h1>Hangman</h1>
+    </header>
+
+    <div class="scoreboard">
+        <div id="wins">Wins: <span>0</span></div>
+        <div id="loses">Loses: <span>0</span></div>
+        <div id="remaining">How Many Guess Left: <span></span></div>
+        <div id="guesses">Guesses: </div>
+    </div>
+    <div class="panel">
+        <h3 id="word-blanks">_ _ _ _ _ _ _ _ _</h3>
+    </div>
+    <form action="javascript:void(0);">
+        <input type="text" name="" id="" placeholder="Enter Your Letter">
+        <input id="buttons" type="button" value="Submit Guess">
+        <input id="buttons" type="button" value="Play Again?">
+    </form>
+    
+    <div class="encouragement">
+        <p>Break A Leg!</p>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
